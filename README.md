@@ -40,6 +40,7 @@ https://docs.google.com/spreadsheets/d/1v71SE_Vm_f_ZZyP7X1RBMFwWsIxJbkU6vHCb_Lhm
 ## Задание 3
 ### Настроить на сцене Unity воспроизведение звуковых файлов.
 
+https://github.com/Gashap/Workshop-2/tree/adf92f93e6b0eb86aa5b5b5ea9c13ae7264e0f91/My%20project
 
 ## Выводы
 
