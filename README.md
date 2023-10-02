@@ -37,6 +37,34 @@ https://docs.google.com/document/d/1BdR4GflQkZ-MsZWAzLFT74Pz3evNDH4-li2W9z5dcjA/
 
 https://docs.google.com/spreadsheets/d/1v71SE_Vm_f_ZZyP7X1RBMFwWsIxJbkU6vHCb_LhmTzU/edit#gid=0
 
+```py
+
+import gspread
+import numpy as np
+gc = gspread.service_account(filename="atomic-heart-resources-b5be789ab3a6.json")
+sh = gc.open("Atomic Heart Resources")
+countRes = np.random.randint(0, 700, 8)
+priceRes = np.random.randint(1, 500, 8)
+
+mon = list(range(1, 7))
+i = 0
+
+
+while i <= len(mon):
+    i += 1
+    if i == 0: continue
+    else:
+        possibilityCreation = priceRes[i] - countRes[i]
+        possibilityCreation = str(possibilityCreation)
+        possibilityCreation = possibilityCreation.replace('.', ',')        
+        sh.sheet1.update(('A' + str(i)), int(i))
+        sh.sheet1.update(('B' + str(i)), int(priceRes[i]))
+        sh.sheet1.update(('C' + str(i)), int(countRes[i]))
+        sh.sheet1.update(('D' + str(i)), int(possibilityCreation))
+        print(possibilityCreation)
+
+```
+
 ## Задание 3
 ### Настроить на сцене Unity воспроизведение звуковых файлов.
 
