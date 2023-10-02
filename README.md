@@ -41,6 +41,7 @@ https://docs.google.com/spreadsheets/d/1v71SE_Vm_f_ZZyP7X1RBMFwWsIxJbkU6vHCb_Lhm
 
 import gspread
 import numpy as np
+
 gc = gspread.service_account(filename="atomic-heart-resources-b5be789ab3a6.json")
 sh = gc.open("Atomic Heart Resources")
 countRes = np.random.randint(0, 700, 8)
@@ -48,7 +49,6 @@ priceRes = np.random.randint(1, 500, 8)
 
 mon = list(range(1, 7))
 i = 0
-
 
 while i <= len(mon):
     i += 1
